@@ -1,0 +1,18 @@
+.course-design {
+    display: flex;
+    flex-direction: column;
+    background-color: #95dada;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 25px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+}
+
+
+.course-design:hover {
+    transform: scale(1.05);
+}
