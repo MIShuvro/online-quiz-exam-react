@@ -1,0 +1,309 @@
+.circular-progress {
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: 350px;
+}
+
+.circular-progress svg {
+    transform: rotate(270deg);
+}
+
+.circular-progress circle {
+    stroke-width: 5;
+    fill: none;
+    stroke-linecap: round;
+}
+
+.circular-progress circle:nth-of-type(1) {
+    stroke: #dee2e6;
+}
+
+.circular-progress circle:nth-of-type(2) {
+    stroke: rgb(37, 175, 37);
+    stroke-dasharray: 251.4285714286;
+    stroke-dashoffset: 75.4285714286;
+}
+
+.circular-progress .pct {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#slider {
+    margin: 0 50px;
+    width: 50%;
+}
+
+#slider::-moz-range-thumb {
+    background-color: #a80d81;
+}
+
+#slider::-webkit-slider-thumb {
+    background-color: #d8503a;
+}
+
+#slider::-ms-thumb {
+    background-color: #d8503a;
+}
+
+#slider:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(216, 80, 58, 0.25);
+}
+
+#slider:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(216, 80, 58, 0.25);
+}
+
+#slider:focus::-ms-thumb {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(216, 80, 58, 0.25);
+}
+
+
+
+input[type="radio"] {
+    display: none;
+
+}
+
+input[type="radio"]+label {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+    position: relative
+}
+
+input[type="radio"]:checked+label {
+    background-color: green;
+}
+
+input[type="radio"]+label::after {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 5px;
+    border: 1px solid #fff;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(45deg);
+
+    border-top-color: transparent;
+    border-left-color: transparent;
+
+}
+
+.male {
+    float: left;
+    width: 300px;
+}
+
+.female {
+    float: left;
+    width: 300px;
+}
+
+h3 {
+    padding: 20px;
+    margin-top: -63px;
+    margin-left: 30px;
+    color: black;
+}
+
+.design {
+    margin-left: 140px;
+    margin-top: 20px;
+
+}
+
+.header {
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.quiz-content {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 10px;
+}
+
+.event-submit {
+    margin-left: 50px;
+}
+
+.event-skip {
+    margin-left: 350px;
+    margin-top: -45px;
+    margin-bottom: 20px;
+}
+
+/*
+    Number of Question
+*/
+/* html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #19354a;
+} */
+
+.setOfQuestion {
+    position: relative;
+    width: 650px;
+    left: 25%;
+    margin: 20px 0 0 -125px;
+}
+
+input[type='range'].n {
+    display: block;
+    margin: 1em auto;
+    padding: 0;
+    background: transparent;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+}
+
+input[type='range'].n,
+input[type='range'].n::-webkit-slider-runnable-track,
+input[type='range'].n::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type='range'].n:after {
+    content: "";
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background: #2788d0;
+    position: absolute;
+    right: 0;
+}
+
+input[type='range'].n:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 0.8em;
+    height: 1em;
+    background: radial-gradient(circle at 0.5em 50%, #2788d0 0.3125em, #2788d0 0.3125em, #2788d0 0.5em, transparent 0.5em), linear-gradient(90deg, transparent 0, #2788d0 0) repeat-x 0 50%;
+    box-sizing: border-box;
+}
+
+input[type='range'].n::-ms-track {
+    border: none;
+    color: transparent;
+}
+
+input[type='range'].n::-webkit-slider-thumb {
+    border: none;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: solid 0.35em transparent solid 0.25em transparent;
+    width: 1.3em;
+    height: 1.3em;
+    background: orange;
+    background-clip: content-box;
+    position: relative;
+    z-index: 10;
+    margin-top: -.1em;
+    margin-left: .05em;
+}
+
+input[type='range'].n::-moz-range-thumb {
+    border: none;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: solid 0.35em transparent solid 0.25em transparent;
+    width: 1.3em;
+    height: 1.3em;
+    background: orange;
+    background-clip: content-box;
+    position: relative;
+    z-index: 10;
+    margin-top: -.1em;
+    margin-left: .05em;
+}
+
+input[type='range'].n::-ms-thumb {
+    border: none;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: solid 0.35em transparent solid 0.25em transparent;
+    width: 1.3em;
+    height: 1.3em;
+    background: orange;
+    background-clip: content-box;
+    position: relative;
+    z-index: 10;
+    margin-top: -.1em;
+    margin-left: .05em;
+}
+
+input[type='range'].n::-ms-tooltip {
+    display: none;
+}
+
+input[type='range'].n:focus {
+    outline: none;
+}
+
+input[type='range'].n.n2:before {
+    background-size: 100% 1em, 100% 0.25em;
+}
+
+input[type='range'].n.n3:before {
+    background-size: 50% 1em, 100% 0.25em;
+}
+
+input[type='range'].n.n4:before {
+    background-size: 33.3333333333% 1em, 100% 0.25em;
+}
+
+input[type='range'].n.n5:before {
+    background-size: 25% 1em, 100% 0.25em;
+}
+
+input[type='range'].n.n6:before {
+    background-size: 20% 1em, 100% 0.25em;
+}
+
+input[type='range'].n.n7:before {
+    background-size: 16.6666666667% 1em, 100% 0.25em;
+}
+
+input[type='range'].n.n8:before {
+    background-size: 14.2857142857% 1em, 100% 0.25em;
+}
+
+input[type='range'].n.n9:before {
+    background-size: 12.5% 1em, 100% 0.25em;
+}
+
+input[type='range'].n.n10:before {
+    background-size: 11.1111111111% 1em, 100% 0.25em;
+}
+
+/*
+    course cart
+*/
+.course-cart {
+    margin-left: -140px;
+}
